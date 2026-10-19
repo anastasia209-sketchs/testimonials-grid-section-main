@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e7eaee;
+  font-family: "Barlow Semi Condensed";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+img {
+  border-radius: 30px;
+  border: 2px solid #7541c8;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.name h2 {
+  font-size: 19px;
+}
+
+.name h3 {
+  font-size: 15px;
+}
+
+.profile {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.topic {
+  font-size: 20px;
+  margin-top: 18px;
+}
+
+p {
+  font-size: 13px;
+  margin-top: 18px;
+}
+
+.daniel {
+  background-color: #7541c8;
+  color: #fff;
+  position: relative;
+}
+
+.symbol {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  z-index: 0;
+}
+.symbol img {
+  width: 90%;
+  height: 50%;
+}
+.walters {
+  background-color: #48556a;
+  color: #fff;
+}
+
+.harmon {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.abrams {
+  background-color: #19212e;
+  color: #fff;
+}
+
+.kira {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* FOR SCREENS BIGGER THAN 400PX */
+@media (min-width: 500px) {
+  .message {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel walter kira"
+      "harmon abram abram kira";
+    gap: 1em;
+  }
+
+  .daniel {
+    grid-area: daniel;
+  }
+  .abrams {
+    grid-area: abram;
+  }
+  .harmon {
+    grid-area: harmon;
+  }
+  .kira {
+    grid-area: kira;
+  }
+  .walters {
+    grid-area: walter;
+  }
+}
