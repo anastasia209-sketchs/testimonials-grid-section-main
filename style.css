@@ -122,4 +122,11 @@ p {
   .walters {
     grid-area: walter;
   }
+  /* Hide the image on screens that are 767px wide or smaller */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display:hide;
+  }
+}
+
 }
