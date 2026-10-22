@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
 }
-
+/* mobile first approach */
 body {
   background-color: #e7eaee;
   font-family: "Barlow Semi Condensed";
@@ -95,6 +95,9 @@ p {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+.hideonmobile {
+  display:none;
+}
 
 /* FOR SCREENS BIGGER THAN 400PX */
 @media (min-width: 500px) {
@@ -122,11 +125,6 @@ p {
   .walters {
     grid-area: walter;
   }
-  /* Hide the image on screens that are 767px wide or smaller */
-@media (max-width: 767px) {
-  .hide-on-mobile {
-    display:hide;
-  }
-}
+ 
 
 }
